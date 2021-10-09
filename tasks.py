@@ -1,6 +1,18 @@
-def test_task_1():
-    print("test task 1")
+import string
 
 
-def test_task_2():
-    print("test task 2")
+def my_cipher():
+    alphabet = string.ascii_lowercase
+    strin = input()
+    for i in strin:
+        result = alphabet[str(i) + 1]
+
+
+def my_index():
+    stri = input()
+    el = input()
+
+    for i, value in enumerate(stri):
+        if value == el:
+            el = i
+    print(el)
