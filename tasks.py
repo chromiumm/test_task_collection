@@ -1,5 +1,7 @@
 import string
 
+from main import search_shifted
+
 
 def my_cipher():
     alphabet = string.ascii_lowercase
@@ -22,10 +24,9 @@ def my_search():
 
 
 def my_true_cipher():
-    alphabet = string.ascii_lowercase
     input_str = input()
     result = ""
     for i in input_str:
         found_index = search_shifted(i)
-
+        result += found_index
     print(result)
